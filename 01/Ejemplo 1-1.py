@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct  5 16:21:47 2021
-
-@author: IVAN
+Ejemplo 1-1.py
 """
 
 print("bienvenido a la calculadora")
@@ -14,11 +12,11 @@ total_notas = 0
 terminado = 0 #cambiara a 1 si se ha terminado
 
 while not terminado:
-    nota = input()
-    if nota == '':
-        terminado = True
-    else:
-        num_notas += 1
-        total_notas += float(nota)
+  nota = input()
+  if nota == '':
+     terminado = True
+  else:
+     num_notas += 1
+     total_notas += float(nota)
 if num_notas > 0:
-    print("Tu promedio es {0:.3}".format(total_notas/num_notas))
+  print("Tu promedio es {0:.3}".format(total_notas/num_notas))
