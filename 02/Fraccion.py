@@ -21,12 +21,21 @@ class Fraccion:
         mcd = self.__mcd(num, den)
         self.__numerador = int(num/mcd)
         self.__denominador = int(den/mcd)
+        return self
     
     def __mcd(self, a, b):
         while a:
             a, b = b % a, a
         return b
-        
+    
+    def __str__(self):
+        return str(self.__numerador) + "/" + str(self.__denominador)
+    
+    def multiplicar(self, otra):
+        num = self.__numerador * otra.get_num()
+        den = self.__denominador * otra.get_den()
+        return Fraccion(num, den)
+    
     def set_num(self, num):
         self.__numerador = num
         
