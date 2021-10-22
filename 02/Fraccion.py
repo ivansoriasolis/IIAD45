@@ -30,7 +30,7 @@ class Fraccion:
     def __str__(self):
         return str(self.__numerador) + "/" + str(self.__denominador)
     
-    def multiplicar(self, otra):
+    def __mul__(self, otra):
         num = self.__numerador * otra.__numerador
         den = self.__denominador * otra.__denominador
         resultado =  Fraccion(num, den)
