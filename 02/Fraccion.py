@@ -7,7 +7,7 @@ Created on Tue Oct 19 19:45:23 2021
 
 class Fraccion:
     
-    def __init__(self, num, den):
+    def __init__(self, num, den=1):
         if not isinstance(num,int) or not isinstance(den, int):
             raise TypeError("Numerador y denominador deben ser int")
         if den == 0:
@@ -36,6 +36,29 @@ class Fraccion:
         resultado =  Fraccion(num, den)
         resultado.simplificar()
         return resultado
+       
+    def __truediv__(self, otra):
+        num = self.__numerador * otra.__denominador
+        den = self.__denominador * otra.__numerador
+        resultado =  Fraccion(num, den)
+        resultado.simplificar()
+        return resultado
+    
+    def __add__(self, otra):
+        if isinstance(otra, int):
+            otra = Fraccion(otra)
+        den = self.__denominador * otra.__denominador
+        num = otra.__denominador*self.__numerador + self.__denominador*otra.__numerador
+        resultado = Fraccion(num,den)
+        resultado.simplificar()
+        return resultado
+    
+    def __sub__(self, otra):
+        return self.__add__(-otra)
+    
+    def __neg__(self):
+        num = -self.__numerador
+        return Fraccion(num,self.__denominador)
     
     def set_num(self, num):
         self.__numerador = num
@@ -49,4 +72,5 @@ class Fraccion:
     def get_den(self):
         return self.__denominador
         
-        
+    
+print(Fraccion(1,3)-Fraccion(1,2))
