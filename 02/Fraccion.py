@@ -43,6 +43,13 @@ class Fraccion:
         """Devuelve un str que muestra la fracción como numerador/denominador"""
         return str(self.__numerador) + "/" + str(self.__denominador)
     
+    def __pow__(self, n):
+        num = self.__numerador**abs(n)
+        den = self.__denominador**abs(n)
+        if n < 0:
+            num, den = den, num
+        return Fraccion(num, den)
+    
     def __mul__(self, otra):
         """Sobrecarga el operador de multiplicacion * y devuelve un
         objeto Fraccion con el resultado de la operacion
@@ -106,5 +113,3 @@ class Fraccion:
     def get_den(self):
         return self.__denominador
         
-    
-print(Fraccion(1,3)-Fraccion(1,2))
