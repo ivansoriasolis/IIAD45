@@ -56,6 +56,9 @@ class Fraccion:
         
         otra:   Una instancia de Fraccion que hará de multiplicando
         """
+        if isinstance(otra, int):
+            otra = Fraccion(otra)
+        
         num = self.__numerador * otra.__numerador
         den = self.__denominador * otra.__denominador
         resultado =  Fraccion(num, den)
@@ -68,11 +71,7 @@ class Fraccion:
         
         otra: Una instancia de Fraccion que hará de divisor
         """
-        num = self.__numerador * otra.__denominador
-        den = self.__denominador * otra.__numerador
-        resultado =  Fraccion(num, den)
-        resultado.simplificar()
-        return resultado
+        return self.__mul__(otra**-1)
     
     def __add__(self, otra):
         """ Sobrecarga el operador de adición + y devuelve un objeto
