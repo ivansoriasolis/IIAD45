@@ -33,6 +33,7 @@ class Fraccion:
         mcd = self.__mcd(num, den)
         self.__numerador = int(num/mcd)
         self.__denominador = int(den/mcd)
+        return self
     
     def __mcd(self, a, b):
         while a:
@@ -99,6 +100,15 @@ class Fraccion:
         """Sobrecarga el operador unario - que hace negativa una Fraccion"""
         num = -self.__numerador
         return Fraccion(num,self.__denominador)
+    
+    def __eq__(self, otra):
+        yo = Fraccion(self.__numerador, self.__denominador)
+        tu = Fraccion(otra.__numerador, otra.__denominador)
+        yo.simplificar()
+        tu.simplificar()
+        if yo.__numerador == tu.__numerador and yo.__denominador == tu.__denominador:
+            return True
+        return False
     
     def set_num(self, num):
         self.__numerador = num
