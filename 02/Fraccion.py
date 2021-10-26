@@ -114,7 +114,7 @@ class Fraccion:
         self.__numerador = num
         
     def set_den(self, den):
-        self.__numerador = den
+        self.__denominador = den
         
     def get_num(self):
         return self.__numerador
