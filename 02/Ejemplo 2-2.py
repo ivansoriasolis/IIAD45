@@ -17,7 +17,7 @@ class Vector:
     
     def __getitem__(self, j):
         """Devuelve la coordenada j-esima del vector"""
-        return self.__coordenadas[j]
+        return self._coordenadas[j]
     
     def __setitem__(self, j, val):
         """Establece la j-esima cooredenada con un valor"""

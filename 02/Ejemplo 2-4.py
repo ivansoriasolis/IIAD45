@@ -9,7 +9,10 @@ class TarjetaCreditoDepredadora(TarjetaCredito):
     """Una extension de TajetaCredito que cobra intereses e impuestos"""
     
     def __init__(self, cliente, banco, cuenta, limite, interes):
-        """Crea una instancia de una nueva tarjeta de credito depredadora"""
+        """Crea una instancia de una nueva tarjeta de credito depredadora
+        
+        interes:    tasa de interes (p.ej  0.05 para el 5%)
+        """
         
         super().__init__(cliente, banco, cuenta, limite)
         self._interes = interes

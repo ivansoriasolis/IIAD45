@@ -42,8 +42,8 @@ class TarjetaCredito:
 
         Devuelve True si se pudo cargar y False si no se pudo.
         """
-        if precio + self._balance > self._limite:  # if charge would exceed limit,
-            return False                           # cannot accept charge
+        if precio + self._balance > self._limite:  
+            return False                           
         else:
             self._balance += precio
             return True

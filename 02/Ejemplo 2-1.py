@@ -42,8 +42,8 @@ class TarjetaCredito:
 
     Devuelve True si se pudo cargar y False si no se pudo.
     """
-    if precio + self._balance > self._limite:  # if charge would exceed limit,
-      return False                           # cannot accept charge
+    if precio + self._balance > self._limite:  
+      return False                           
     else:
       self._balance += precio
       return True
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     billetera[1].cargar(2*val)
     billetera[2].cargar(3*val)
 
-  for c in range(3):
+  for c in range(len(billetera)):
     print('Cliente =', billetera[c].get_cliente())
     print('Banco =', billetera[c].get_banco())
     print('Cuenta =', billetera[c].get_cuenta())
