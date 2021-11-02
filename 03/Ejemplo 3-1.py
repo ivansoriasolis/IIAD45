@@ -1,18 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 3-1. 
-@author: IVAN
-"""
+# Ejemplo 3-1.  Funcion que devuelve el mayor valor de una lista
 
-
-def promedio_prefijo(S):
-    """Devuelve una lista tal que para todos los elementos 
-    A[j] son iguales al promedio de los anteriores S[0]..S[j]"""
-    n = len(S)
-    A = [0]*n
-    for j in range(n):
-        total = 0
-        for i in range(j+1):
-            total += S[i]
-        A[j] = total / (j+1)
-    return A
+def encontrar_max(data):
+    """Devuelve el elemento maximo de una lista"""
+    masgrade = data[0]
+    for val in data:
+        if val > masgrande:
+            masgrade = val
+    return masgrande

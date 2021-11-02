@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 2-3. Cear un iterador
-
-"""
-
 class IteradorSecuencial:
     """Un iteradora para cualquier tipo secuencial"""
     
@@ -23,6 +17,3 @@ class IteradorSecuencial:
     def __iter__(self):
         """Por convencion un iterador debe devolver otro"""
         return self
-
-    
-    

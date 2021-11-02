@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Ejempo 2-2.Definicion de la clase vector
-
-"""
-
 class Vector:
     """Representa un vector como un espacio multidimensional"""
     

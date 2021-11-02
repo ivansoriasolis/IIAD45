@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 1-2.py  Tablero de ajedrez con listas
-"""
-
 tablero = [
     ['t', 'c', 'a', 'R', 'r', 'a', 'c', 't'],
     ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],

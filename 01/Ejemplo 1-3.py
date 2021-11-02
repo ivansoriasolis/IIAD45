@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 1-3 Funcion que cuenta la cantida de ocurrencias 
-"""
 def contar(data, target):
     n = 0
     for item in data:

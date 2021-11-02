@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 2-7. Una progresion geométrica
-"""
 from Progresion import Progresion
 
 class ProgresionGeometrica(Progresion):

@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 2-4. Una subclase de tarjeta Credito
-
-"""
 from TarjetaCredito import TarjetaCredito
 
 class TarjetaCreditoDepredadora(TarjetaCredito):

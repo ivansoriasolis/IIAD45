@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 2-5. Una clase general progresion
-Progresion.py
-"""
-
 class Progresion:
     """Iterador que produce una progresion generica
     
@@ -20,7 +14,7 @@ class Progresion:
         Este debe ser sobrecargado por una subclase que personalice 
         la progresion
         
-        Por convencion, si actual se establece a None, este señala
+        Por convencion, si actual se establece a None, este senala
         el fin de una progresion finita
         """
         

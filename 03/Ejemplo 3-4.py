@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 3-3. 
-@author: IVAN
-"""
-
+# Ejemplo 3-4. Algoritmo de complejidad n
 
 def promedio_prefijo3(S):
     """Devuelve una lista tal que para todos los elementos 
