@@ -8,7 +8,7 @@ Created on Tue Nov  2 18:07:06 2021
 from time import time
 
 def esPrimo(n):
-    for divisor in range(2, n):
+    for divisor in range(2, int(n**(0.5))+1):
         #print(divisor)
         if n % divisor == 0:
             return False
@@ -16,7 +16,7 @@ def esPrimo(n):
 
 tiempo_inicial = time()
 
-esPrimo(12721)
+esPrimo(1000000000039)
 
 tiempo_final = time()
 
