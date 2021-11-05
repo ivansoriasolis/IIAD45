@@ -1,6 +1,6 @@
 # Ejemplo 3-2.  promedio prefijo con complejidad cuadratica
 
-def promedio_prefijo(S):
+def promedio_prefijo1(S):
     """Devuelve una lista tal que para todos los elementos 
     A[j] son iguales al promedio de los anteriores S[0]..S[j]"""
     n = len(S)

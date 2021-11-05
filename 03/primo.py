@@ -16,7 +16,8 @@ def esPrimo(n):
 
 tiempo_inicial = time()
 
-esPrimo(1000000000039)
+esPrimo(100000000001)
+
 
 tiempo_final = time()
 
