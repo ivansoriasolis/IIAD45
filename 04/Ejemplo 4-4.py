@@ -10,6 +10,6 @@ def uso_disco(path):
             childpath = os.path.join(path, filename)
             total += uso_disco(childpath)
             
-    print('{0:<7}'.format(total), path)
+    #print('{0:<7}'.format(total), path)
     return total
     

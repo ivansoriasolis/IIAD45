@@ -8,9 +8,10 @@ def puzzle_solver(k, S, U):
         if k==1:
             print(Sn)
         else:
-            if not encontrado:
+            # if not encontrado:
                 puzzle_solver(k-1, Sn, Un)
         Sn.remove(e)
         Un = [e] + Un
 
-puzzle_solver(3,[],[1,2,3,4,5,6,7,8,9])
+puzzle_solver(7,[],[0,1,2,3,4,5,6,7,8,9])
+

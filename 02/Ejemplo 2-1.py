@@ -42,6 +42,9 @@ class TarjetaCredito:
 
     Devuelve True si se pudo cargar y False si no se pudo.
     """
+    if not isinstance(precio, (int,float)):
+        raise ValueError("No es un valor numerico")
+    
     if precio + self._balance > self._limite:  
       return False                           
     else:
@@ -50,6 +53,9 @@ class TarjetaCredito:
 
   def pagar(self, monto):
     """Procesa el pago del cliente y lo descuenta del balance."""
+    
+    if not isinstance(monto, (int,float)):
+        raise ValueError("No es un valor numerico")
     self._balance -= monto
 
 if __name__ == '__main__':

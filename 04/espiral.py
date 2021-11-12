@@ -10,11 +10,22 @@ import turtle
 miTortuga = turtle.Turtle()
 miVentana = turtle.Screen()
 
-def dibujarEspiral(miTortuga, longitudLinea):
-    if longitudLinea > 0:
-        miTortuga.forward(longitudLinea)
-        miTortuga.right(90)
-        dibujarEspiral(miTortuga,longitudLinea-5)
+miTortuga.goto(10,10)
+miTortuga.forward(200)
+miTortuga.right(90)
+miTortuga.penup()
+miTortuga.forward(200)
 
-dibujarEspiral(miTortuga,100)
+miTortuga.shape("turtle")
+
+
 miVentana.exitonclick()
+
+# def dibujarEspiral(miTortuga, longitudLinea):
+#     if longitudLinea > 0:
+#         miTortuga.forward(longitudLinea)
+#         miTortuga.right(90)
+#         dibujarEspiral(miTortuga,longitudLinea-5)
+
+# dibujarEspiral(miTortuga,100)
+# miVentana.exitonclick()
