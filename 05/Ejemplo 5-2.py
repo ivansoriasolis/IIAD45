@@ -1,6 +1,5 @@
 # Ejemplo 5-2. Implementacion de la clase ArregloDinamico
 
-#ArregloDinamico.py
 import ctypes
 
 class ArregloDinamico:
@@ -35,6 +34,11 @@ class ArregloDinamico:
         for k in range(self._n):
             B[k] = self._A[k]
         self._A = B
+        self._capacidad = c
+        
+    def _crear_arreglo(self, c):
+        """Devuelve un arreglo con capacidad c"""
+        return (c*ctypes.py_object)()
         self._capacidad = c
         
     def _crear_arreglo(self, c):
