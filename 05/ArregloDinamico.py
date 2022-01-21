@@ -57,5 +57,7 @@ class ArregloDinamico:
                     self._A[j] = self._A[j+1]
                 self._A[self._n - 1] = None
                 self._n -=1
+                if self._capacidad//self._n == 2:
+                    self._redimensiona(self._capacidad//2)
                 return
         raise ValueError('valor no encontrado')

@@ -31,7 +31,7 @@ class CifradorCesar:
         return ''.join(msg)
     
 if __name__ == '__main__':
-    cifrador = CifradorCesar(3)
+    cifrador = CifradorCesar(7)
     mensaje = "EL AGUILA ESTA VOLANDO"
     codificado = cifrador.encripta(mensaje)
     print('Secret: ', codificado)
