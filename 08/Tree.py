@@ -101,3 +101,45 @@ class Tree:
     def positions(self):
         """Genera una iteracion de la posiciones del arbol"""
         return self.preorder()
+    
+    def postorder(self):
+        """Genera una iteracion postorden de posiciones en el arbol"""
+        if not self.is_empty():
+            for p in self._subtree_postorder(self.root()):
+                yield p
+            
+    def _subtree_postorder(self, p):
+        """Genera una iteracion postorden de posiciones en el arbol con raiz en p"""
+        for c in self.children(p):
+            for other in self._subtree_postorder(c):
+                yield other
+        yield p
+                
+    def breadhfirst(self):
+        """Genera una iteracion primero en amplitud de las posiciones del arbol"""
+        from LinkedQueue import LinkedQueue
+        
+        if not self.is_empty():
+            fringe = LinkedQueue()
+            fringe.enqueue(self.root())
+            while not fringe.is_empty():
+                p = fringe.dequeue()
+                yield p
+                for c in self.children(p):
+                    fringe.enqueue(c)
+                    
+    def inorder(self):
+        """Generar una iteracio inorden de posicoines en el arbol"""
+        if not self.is_empty():
+            for p in self._subtree_inorder(self.root()):
+                yield p
+                
+    def _subtree_inorder(self, p):
+        """Genera una iteracion inorden de posiciones en un subarbol etiquetado como p."""
+        if self.left(p) is not None:
+            for other in self._subtree_inorder(self.left(p)):
+                yield other
+        yield p
+        if self.right(p) is not None:
+            for other in self._subtree_inorder(self.right(p)):
+                yield other
