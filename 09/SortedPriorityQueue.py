@@ -44,5 +44,7 @@ class SortedPriorityQueue(PriorityQueueBase):
     """
     if self.is_empty():
       raise Empty('La cola de prioridad esta vacia.')
-    item = self._data.delete(self._data.first())
+    p = self._data.first()
+    item = p.element()
+    self._data.delete(self._data.first())
     return (item._key, item._value)
