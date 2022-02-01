@@ -47,5 +47,11 @@ class UnsortedPriorityQueue(PriorityQueueBase):
     Origina un error si esta vacia.
     """
     p = self._find_min()
-    item = self._data.delete(p)
+    item = p.element()
+    self._data.delete(p)
     return (item._key, item._value)
+
+upq = UnsortedPriorityQueue()
+upq.add(1, "A")
+upq.add(2, "B")
+upq.remove_min()

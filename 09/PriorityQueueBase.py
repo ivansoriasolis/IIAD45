@@ -24,22 +24,22 @@ class PriorityQueueBase:
 
   def __len__(self):
     """Return the number of items in the priority queue."""
-    raise NotImplementedError('must be implemented by subclass')
+    raise NotImplementedError('debe ser implementada por la subclase')
 
   def add(self, key, value):
     """Add a key-value pair."""
-    raise NotImplementedError('must be implemented by subclass')
+    raise NotImplementedError('debe ser implementada por la subclase')
 
   def min(self):
     """Return but do not remove (k,v) tuple with minimum key.
 
     Raise Empty exception if empty.
     """
-    raise NotImplementedError('must be implemented by subclass')
+    raise NotImplementedError('debe ser implementada por la subclase')
 
   def remove_min(self):
     """Remove and return (k,v) tuple with minimum key.
 
     Raise Empty exception if empty.
     """
-    raise NotImplementedError('must be implemented by subclass')
+    raise NotImplementedError('debe ser implementada por la subclase')
