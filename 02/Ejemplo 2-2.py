@@ -1,3 +1,5 @@
+# Ejemplo 2-2: Clase Vector
+
 class Vector:
     """Representa un vector como un espacio multidimensional"""
     

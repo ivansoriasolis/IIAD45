@@ -6,4 +6,3 @@ def preorder_indent(T, p, d):
     print(2*d*' '+str(p.element()))
     for c in T.children(p):
         preorder_indent(T, c, d+1)
-    

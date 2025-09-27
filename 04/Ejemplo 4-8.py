@@ -6,7 +6,3 @@ def suma_lineal(S, n):
         return 0
     else:
         return suma_lineal(S, n-1) + S[n-1]
-    
-    
-
-    

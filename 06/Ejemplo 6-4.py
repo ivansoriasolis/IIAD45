@@ -20,4 +20,3 @@ def empareja_html(raw):
                 return False
         j = raw.find('<', k+1)
     return S.is_empty()
-

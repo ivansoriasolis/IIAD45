@@ -1,3 +1,5 @@
+# Ejemplo 1-3: Contar ocurrencias de un elemento en una lista
+
 def contar(data, target):
     n = 0
     for item in data:

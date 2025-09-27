@@ -9,7 +9,7 @@ class UnsortedPriorityQueue(PriorityQueueBase):
   #----------------------------- funciones no publicas --------------------------
   def _find_min(self):
     """Devuelve la posicon del item con la clave minima"""
-    if self.is_empty():               # is_empty inherited from base class
+    if self.is_empty():               # is_empty heredada de PriorityQueueBase
       raise Empty('Cola de prioridad vacia')
     small = self._data.first()
     walk = self._data.after(small)
@@ -33,19 +33,13 @@ class UnsortedPriorityQueue(PriorityQueueBase):
     self._data.add_last(self._Item(key, value))
 
   def min(self):
-    """Devuelve una tupla (k,v) con el minimo valor pero no la remueve.
-
-    Origina una excepcion Empty.
-    """
+    """Devuelve una tupla (k,v) con el minimo valor pero no la remueve."""
     p = self._find_min()
     item = p.element()
     return (item._key, item._value)
 
   def remove_min(self):
-    """Remueve y devuelve una tupla (k,v) con el minimo valor k.
-
-    Origina un error si esta vacia.
-    """
+    """Remueve y devuelve una tupla (k,v) con el minimo valor k."""
     p = self._find_min()
     item = self._data.delete(p)
     return (item._key, item._value)

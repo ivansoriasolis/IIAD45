@@ -1,3 +1,5 @@
+# Ejemplo 1-2: Movimiento de peones en un tablero de ajedrez
+
 tablero = [
     ['t', 'c', 'a', 'R', 'r', 'a', 'c', 't'],
     ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],

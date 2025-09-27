@@ -1,3 +1,5 @@
+# Ejemplo 1-1: Calculadora de promedio de notas
+
 print("bienvenido a la calculadora")
 print('ingrese todas sus notas, una por linea')
 print('ingrese una linea en blanco para indicar el final.')

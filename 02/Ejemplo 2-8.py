@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 2-8. Una clase base abstracta
-"""
+# Ejemplo 2-8: Clase Secuencia Abstracta
 
 class Secuencia(metaclass=ABCMeta):
     
@@ -11,4 +8,6 @@ class Secuencia(metaclass=ABCMeta):
     @abstractmethod
     def __getitem__(self, j):
         
-    def 
+    def __iter__(self):
+        """Por convención un iterador debe devolver otro"""
+        return IteradorSecuencial(self)

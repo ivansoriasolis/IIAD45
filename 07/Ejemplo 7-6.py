@@ -44,4 +44,5 @@ class _DoublyLinkedBase:
         self._size -= 1
         element = node._element 
         node._prev = node._next = node._element
+        return element
     

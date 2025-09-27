@@ -10,6 +10,3 @@ def preorder_label(T, p, d, path):
         preorder_label(T, c, d+1, path)
         path[-1] += 1
     path.pop()
-    
-    
-    

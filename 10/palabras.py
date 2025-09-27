@@ -1,35 +1,21 @@
-# -*- coding: utf-8 -*-
-"""
-Contar la cantidad de veces que ocurre cada palabra en el libro en txt
-mostrar la que tiene mas repeticiones y cuantas veces ses repite
-"""
+# Conteo de palabras.
 
-archivo = open("el_quijote.txt", encoding="utf-8")
-lineas = archivo.readlines()
-palabras = ' '.join(lineas).lower().split()
+import sys
+filename = sys.argv[1]
 
-def quitapuntuacion(s):
-    simbolos = ".,:"
-    snueva = ''.join( c for c in s if c not in simbolos)
-    return snueva
+freq = {}
+for piece in open(filename).read().lower().split():
+  # Solo aceptamos caracteres alfabeticos
+  word = ''.join(c for c in piece if c.isalpha())
+  if word:                                # requiero un caracter alafabetico
+    freq[word] = 1 + freq.get(word, 0)
 
-palabras = map(quitapuntuacion, palabras)
-
-conteo = {}
-
-for p in palabras:
-    if p in conteo:
-        conteo[p] += 1
-    else:
-        conteo[p] = 1
-
-maximo = 0
-mayor = ""
-
-for c in conteo:
-    if conteo[c] >= maximo:
-        maximo = conteo[c]
-        mayor = c
-
-print(mayor, maximo)
+max_word = ''
+max_count = 0
+for (w,c) in freq.items():    # (clave, valor) tuplas representan (word, count)
+  if c > max_count:
+    max_word = w
+    max_count = c
+print('La palabra mas frecuente es', max_word)
+print('Su numero de ocurrencias es', max_count)
 

@@ -6,9 +6,3 @@ def power(x, n):
         return 1
     else:
         return x*power(x, n-1)
-    
-    
-    
-    
-
-    

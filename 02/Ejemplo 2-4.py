@@ -1,3 +1,5 @@
+# Ejemplo 2-4: Clase Tarjeta de Crédito Depredadora
+
 from TarjetaCredito import TarjetaCredito
 
 class TarjetaCreditoDepredadora(TarjetaCredito):

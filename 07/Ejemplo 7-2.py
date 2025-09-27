@@ -1,5 +1,7 @@
 # Ejemplo 7-2. Implementación del ADT pila usando una lista
 
+from Empty import Empty
+
 class LinkedStack:
     """Implementacion de pila usando una lista simplemente enlazada"""
     
@@ -51,4 +53,3 @@ class LinkedStack:
         self._head = self._head._next
         self._size -= 1
         return answer
-    

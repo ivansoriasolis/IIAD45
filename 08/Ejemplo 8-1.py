@@ -52,4 +52,3 @@ class Tree:
     def is_empty(self):
         """Devuelve True si el arbol esta vacio"""
         return len(self) == 0
-

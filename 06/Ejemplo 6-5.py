@@ -5,7 +5,7 @@ class Empty(Exception):
 
 class ArrayQueue:
     """Implementacion FIFO de una cola usando una lista"""
-    CAPACIDAD_PREDETERMINADA = 10
+    CAPACIDAD_PREDETERMINADA = 5
     
     def __init__(self):
         """Creando una cola vacia"""

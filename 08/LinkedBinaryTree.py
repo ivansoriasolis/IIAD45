@@ -162,32 +162,33 @@ class LinkedBinaryTree(BinaryTree):
             t2._root = None 
             t2._size = 0 
 
-lbt = LinkedBinaryTree()
-lbt._add_root(6)
-lbt._add_right(lbt.root(),8)
-lbt._add_left(lbt.root(),4)
-lbt._add_left(lbt.left(lbt.root()),3)
-lbt._add_right(lbt.left(lbt.root()), 5)
-
-print("    6    ")
-print("   / \\ ")
-print("  4   8 ")
-print(" / \\ ")
-print("3   5 ")
-
-
-print("Preorden")
-for n in lbt.preorder():
-    print(n.element())
-
-print("Postorden")
-for n in lbt.postorder():
-    print(n.element())
-
-print("Primero en amplitud")
-for n in lbt.breadhfirst():
-    print(n.element())
+if __name__ == '__main__':
+    lbt = LinkedBinaryTree()
+    lbt._add_root(6)
+    lbt._add_right(lbt.root(),8)
+    lbt._add_left(lbt.root(),4)
+    lbt._add_left(lbt.left(lbt.root()),3)
+    lbt._add_right(lbt.left(lbt.root()), 5)
     
-print("Inorden")
-for n in lbt.inorder():
-    print(n.element())
+    print("    6    ")
+    print("   / \\ ")
+    print("  4   8 ")
+    print(" / \\ ")
+    print("3   5 ")
+    
+    
+    print("Preorden")
+    for n in lbt.preorder():
+        print(n.element())
+    
+    print("Postorden")
+    for n in lbt.postorder():
+        print(n.element())
+    
+    print("Primero en amplitud")
+    for n in lbt.breadhfirst():
+        print(n.element())
+        
+    print("Inorden")
+    for n in lbt.inorder():
+        print(n.element())

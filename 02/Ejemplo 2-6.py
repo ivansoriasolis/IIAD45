@@ -1,3 +1,5 @@
+# Ejemplo 2-6: Clase Progresion Aritmetica
+
 from Progresion import Progresion
 
 class ProgresionAritmetica(Progresion):

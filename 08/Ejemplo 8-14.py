@@ -3,4 +3,3 @@
 def positions(self):
     """Genera una iteracion de las tres posiciones"""
     return self.inorder()
-    

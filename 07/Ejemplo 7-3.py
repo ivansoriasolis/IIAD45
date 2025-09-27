@@ -1,5 +1,7 @@
 # Ejemplo 7-3. Implementación del ADT cola usando una lista
 
+from Empty import Empty
+
 class LinkedQueue:
     """Implementacion de la cola usando una lista simplemente enlazada"""
     

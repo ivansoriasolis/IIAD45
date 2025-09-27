@@ -12,4 +12,3 @@ def remove(self, value):
                 self._redimensiona(self._capacidad//2)
             return
     raise ValueError('valor no encontrado')
-    

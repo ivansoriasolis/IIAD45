@@ -10,11 +10,3 @@ def power(x, n):
         if n % 2 == 1:
             result *= x
         return result
-        
-
-    
-    
-    
-    
-
-    

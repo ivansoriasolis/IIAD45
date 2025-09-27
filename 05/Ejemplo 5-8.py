@@ -9,5 +9,3 @@ def insertar_ordenar(A):
             A[j] = A[j-1]
             j -= 1
         A[j] = actual
-        
-    

@@ -5,7 +5,6 @@ class _Node:
     __slots__ = '_elemento', '_prev', '_next'
     
     def __init__(self, element, prev, next):
-        self._element = elemento
+        self._elemento = element
         self._prev = prev
         self._next = next
-

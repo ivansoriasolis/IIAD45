@@ -19,27 +19,23 @@ class PriorityQueueBase:
 
   #-------------------------- funcionalidad publica------------------------------
   def is_empty(self):                 
-    """Devuelve True si la cola de prioridad esta vacia."""
+    """devuelve True si la cola de prioridad está vacía."""
     return len(self) == 0
 
   def __len__(self):
-    """Devuelve la cantidad de elementos en una cola de prioridad."""
+    """devuelve el número de elementos en la cola de prioridad."""
     raise NotImplementedError('debe ser implementada por la subclase')
 
   def add(self, key, value):
-    """Add a key-value pair."""
+    """Agregar un par (clave, valor) a la cola de prioridad."""
     raise NotImplementedError('debe ser implementada por la subclase')
 
   def min(self):
-    """Devuelve pero no remueve la tupla (k,v) con la clave k minima.
-
-    origina un error si esta vacia.
-    """
-    raise NotImplementedError(v)
+    """devuelve (k,v) tupla con clave mínima sin eliminarlo.
+    si está vacía, lanza la excepción Empty."""
+    raise NotImplementedError('debe ser implementada por la subclase')
 
   def remove_min(self):
-    """Remueve y devuelve la tupla (k,v) con el minimo valor de k.
-
-    origina un error si esta vacia.
-    """
+    """Devuelve (k,v) tupla con clave mínima y la elimina.
+    si está vacía, lanza la excepción Empty."""
     raise NotImplementedError('debe ser implementada por la subclase')

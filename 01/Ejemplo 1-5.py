@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Ejemplo 1-5. Funcion tradicional que computa factores
-"""
+# Ejemplo 1-5: Encontrar factores de un número
 
 def factores(n):
     results = []

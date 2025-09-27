@@ -2,6 +2,7 @@
 
 from PriorityQueueBase import PriorityQueueBase
 from PositionalList import PositionalList
+from Empty import Empty 
 
 class UnsortedPriorityQueue(PriorityQueueBase): 
   """Una cola de prioridad orientada a minimo con una lista desordenada"""

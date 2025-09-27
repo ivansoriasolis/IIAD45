@@ -1,3 +1,5 @@
+# Ejemplo 2-5: Clase Progresion
+
 class Progresion:
     """Iterador que produce una progresion generica
     

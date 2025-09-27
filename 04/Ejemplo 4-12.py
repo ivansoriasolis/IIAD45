@@ -9,11 +9,3 @@ def suma_binaria(S, start, stop):
     else:
         mid = (start + stop) // 2
         return suma_binaria(S, start, mid) + suma_binaria(S, mid, stop)
-        
-
-    
-    
-    
-    
-
-    

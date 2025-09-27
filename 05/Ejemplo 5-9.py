@@ -37,4 +37,3 @@ if __name__ == '__main__':
     print('Secret: ', codificado)
     respuesta = cifrador.desencripta(codificado)
     print('Mensaje: ', respuesta)
-    

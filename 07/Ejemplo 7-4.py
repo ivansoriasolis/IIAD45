@@ -1,5 +1,7 @@
 # Ejemplo 7-4. Implementacion de la clase CircularQueue
 
+from Empty import Empty
+
 class CircularQueue:
     """Implementacion de cola usando una lista circular"""
     

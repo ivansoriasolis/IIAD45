@@ -7,5 +7,3 @@ def buen_fibonacci(n):
     else:
         (a, b) = buen_fibonacci(n-1)
         return (a+b, a)
-
-    

@@ -1,3 +1,5 @@
+# Ejemplo 2-3: Clase IteradorSecuencial
+
 class IteradorSecuencial:
     """Un iteradora para cualquier tipo secuencial"""
     

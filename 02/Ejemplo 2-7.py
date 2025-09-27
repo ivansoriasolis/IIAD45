@@ -1,3 +1,5 @@
+# Ejemplo 2-7: Clase Progresion Geometrica
+
 from Progresion import Progresion
 
 class ProgresionGeometrica(Progresion):

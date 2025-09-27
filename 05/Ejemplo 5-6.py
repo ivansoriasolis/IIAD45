@@ -15,4 +15,3 @@ class EntradaJuego: #EntradaJuego.py
     
     def __str__(self):
         return '({0}, {1})'.format(self._nombre, self._puntos)
-    

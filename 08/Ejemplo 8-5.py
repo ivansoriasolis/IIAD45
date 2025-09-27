@@ -8,4 +8,3 @@ def height(self, p = None):
     if p is None:
         p = self.root()
     return self._height2(p)
-

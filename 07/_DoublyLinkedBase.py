@@ -43,5 +43,6 @@ class _DoublyLinkedBase:
         successor._prev = predecessor
         self._size -= 1
         element = node._element 
-        node._prev = node._next = node._element
+        node._prev = node._next = None 
+        return element  #para devolver el eleminado
         

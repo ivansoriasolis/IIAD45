@@ -1,6 +1,7 @@
 # Ejemplo 7-7. Implementacion de la clase LinkedDeque
 
 from _DoublyLinkedBase import _DoublyLinkedBase
+from Empty import Empty
 
 class LinkedDeque(_DoublyLinkedBase):
     """Implementacion de una deque en base a una lista doblemente enlazada"""
