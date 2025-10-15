@@ -1,7 +1,7 @@
 #Ejemplo 10-4. MapBase
 
 from MapBase import MapBase
-from collections.abc import MutableMapping
+from collections import MutableMapping
 from random import randrange         # usado para elegir parámetros
 
 class HashMapBase(MapBase):

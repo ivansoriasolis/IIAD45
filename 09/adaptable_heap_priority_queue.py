@@ -49,10 +49,38 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
     j = loc._index
     if not (0 <= j < len(self) and self._data[j] is loc):
       raise ValueError('Localizador inválido')
-    if j == len(self) - 1:                # item at last position
-      self._data.pop()                    # just remove it
+    if j == len(self) - 1:                # item a la última posición
+      self._data.pop()                    # removerlo de la lista
     else:
-      self._swap(j, len(self)-1)          # swap item to the last position
-      self._data.pop()                    # remove it from the list
-      self._bubble(j)                     # fix item displaced by the swap
+      self._swap(j, len(self)-1)          # intercabiar con el último
+      self._data.pop()                    # removerlo de la lista
+      self._bubble(j)                     # reparar la propiedad del montículo
     return (loc._key, loc._value)             
+
+
+if __name__ == '__main__':
+    #Insertamos los pares (k, v) en cualquier orden
+    ahpq = AdaptableHeapPriorityQueue()
+    ahpq.add(4, 'C')
+    ahpq.add(5, 'A')
+    ahpq.add(6, 'Z')
+    ahpq.add(15, 'K')
+    l = ahpq.add(9, 'F')
+    ahpq.add(7, 'Q')
+    ahpq.add(20, 'B')
+    ahpq.add(16, 'X')
+    ahpq.add(25, 'J')
+    m = ahpq.add(14, 'E')
+    ahpq.add(12, 'H')
+    ahpq.add(11, 'S')
+    ahpq.add(8, 'W')
+    
+    #actualizamos la localizacion l    
+    ahpq.update(l, 4, 'Z')
+    
+    #removemos la localizacion m
+    ahpq.remove(m)
+    
+    #atendemos por prioridad
+    while not ahpq.is_empty():
+        print(ahpq.remove_min())

@@ -19,11 +19,11 @@ class PriorityQueueBase:
 
   #-------------------------- funcionalidad publica------------------------------
   def is_empty(self):                 
-    """Return True if the priority queue is empty."""
+    """Devuelve True si la cola de prioridad esta vacia."""
     return len(self) == 0
 
   def __len__(self):
-    """Return the number of items in the priority queue."""
+    """Devuelve el numero de items en la cola de prioridad."""
     raise NotImplementedError('debe ser implementada por la subclase')
 
   def add(self, key, value):

@@ -3,7 +3,6 @@
 from MapBase import MapBase
 
 class UnsortedTableMap(MapBase):
-  """Map implementation using an unordered list."""
   """Implementacion de un map utilizando una lista no ordenada"""
 
   def __init__(self):

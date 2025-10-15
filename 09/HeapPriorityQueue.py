@@ -1,8 +1,9 @@
 from Empty import Empty
 
 from PriorityQueueBase import PriorityQueueBase
+from PriorityQueue import PriorityQueue
 
-class HeapPriorityQueue(PriorityQueueBase): # la clase base define _Item
+class HeapPriorityQueue(PriorityQueue): # la clase base define _Item
   """Una cola de prioridad min-oriented implementada con un heap bianrio."""
   #------------------------ comportamientos privados ------------------------------
   def _parent(self, j):
